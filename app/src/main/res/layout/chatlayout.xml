@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background="@drawable/shape"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+
+
+
+    android:layout_height="wrap_content">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/propicnee"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left|top"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#F5F5FA"
+
+        android:src="@mipmap/propic" />
+
+    <TextView
+        android:text="Message"
+        android:textColor="#14141C"
+        android:scrollHorizontally="false"
+        android:textSize="14sp"
+        android:maxWidth="225dp"
+
+        android:layout_gravity="fill"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toRightOf="@+id/propicnee" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/progress_animation"
+        android:id="@+id/image_media"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_below="@+id/propicnee"
+        android:layout_alignStart="@+id/propicnee" />
+
+    <TextView
+        android:text="2m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:textSize="10sp"
+
+
+        android:layout_marginEnd="10dp"
+        android:layout_alignBaseline="@+id/message"
+        android:layout_alignBottom="@+id/message"
+        android:layout_toEndOf="@+id/message"
+        android:layout_marginStart="11dp" />
+
+</RelativeLayout>

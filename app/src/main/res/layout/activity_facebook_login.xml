@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|center_vertical|center"
+    android:background="#FFFFFF">
+
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_below="@+id/splashscreen"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/loginbutton"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@color/cardview_light_background"
+
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+
+
+        android:layout_gravity="bottom|end"
+
+        android:id="@+id/fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/fblogo"
+
+        android:layout_below="@+id/splashscreen"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:text="Login with"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView"
+        android:textColor="#D2D2D9"
+
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+
+        android:id="@+id/splashscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logotod"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp" />
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        app:srcCompat="@color/com_facebook_button_login_silver_background_color"
+        android:layout_below="@+id/fb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/line" />
+
+    <TextView
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:textColor="#D2D2D9"
+        android:id="@+id/signup"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

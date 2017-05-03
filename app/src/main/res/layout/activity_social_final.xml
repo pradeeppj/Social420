@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary" tools:context=".social_profile">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+
+                android:background="#FFFFFF"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/menufinal"
+                    android:id="@+id/menu"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="305dp"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/profileee1"
+                    android:id="@+id/profileimg"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+
+
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="70dp"
+                    app:srcCompat="@drawable/storrrnew"
+                    android:id="@+id/storrr"
+                    android:visibility="visible"/>
+
+                <ImageView
+
+                    android:layout_width="130dp"
+                    app:srcCompat="@drawable/logoneeee"
+                    android:layout_height="30dp"
+                    android:id="@+id/togglenew"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+
+                    android:layout_alignTop="@+id/profileimg"
+                    android:layout_toRightOf="@+id/menu"
+                    android:layout_toEndOf="@+id/menu" />
+
+
+            </RelativeLayout>
+
+
+            <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="#9F9FAB"
+        android:backgroundTint="#f5f5fa"
+        android:text="Rebecca Jane"
+        android:ems="10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/profile_name"
+        android:layout_below="@+id/topbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Gallery
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_name"
+
+        />
+
+    <ImageView
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image2"
+        android:layout_below="@+id/gallery"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <com.social420.social420.TagView
+        android:id="@+id/tagview"
+        android:layout_below="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:lineMargin="5dp"
+        app:tagMargin="3dp"
+        app:textPaddingBottom="3dp"
+        app:textPaddingLeft="10dp"
+        app:textPaddingRight="10dp"
+        app:textPaddingTop="3dp">
+    </com.social420.social420.TagView>
+
+
+
+        <EditText
+            android:id="@+id/edit_tag"
+            android:layout_below="@+id/tagview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="INPUT TAG TEXT"/>
+
+
+
+        <TextView
+                android:id="@+id/tv_add"
+
+            android:layout_below="@+id/edit_tag"
+                android:layout_marginRight="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:text="ADD A TAG"/>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

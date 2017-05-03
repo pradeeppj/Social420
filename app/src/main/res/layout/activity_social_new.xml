@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary" tools:context=".social_profile">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+
+                android:background="#FFFFFF"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="305dp"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/profileee1"
+                    android:id="@+id/profileimg"
+                    android:visibility="visible"/>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@mipmap/lgo1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/togglenew"
+
+
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="22dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="#9F9FAB"
+                android:backgroundTint="#f5f5fa"
+                android:text=""
+                android:ems="10"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/profile_name"
+                android:layout_below="@+id/topbar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+
+                android:id="@+id/slide"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="400dp"
+                android:src="@mipmap/imageload"
+                android:layout_below="@+id/profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="51dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
